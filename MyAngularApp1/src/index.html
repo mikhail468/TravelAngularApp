@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Angular QuickStart</title>
+  <base href="/src/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- Polyfill(s) for older browsers -->
+  <script src="/node_modules/core-js/client/shim.min.js"></script>
+  <script src="/node_modules/zone.js/dist/zone.js"></script>
+  <script src="/node_modules/systemjs/dist/system.src.js"></script>
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('main.js').catch(function (err) { console.error(err); });
+  </script>
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-light">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </nav>
+      </div>
+         <my-app>Loading AppComponent content here ...</my-app>
+    </div>
+  </body>
+</html>
